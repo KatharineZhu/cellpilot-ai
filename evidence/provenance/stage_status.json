@@ -1,0 +1,30 @@
+{
+  "run_id": "verified_run",
+  "started_at_utc": "2026-10-14T07:13:58.732804+00:00",
+  "stages": {
+    "fetch": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T08:03:46.109562+00:00"
+    },
+    "analysis": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T08:04:01.439567+00:00"
+    },
+    "annotation": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T08:04:02.004598+00:00"
+    },
+    "interpretation": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T15:09:05.509018+00:00"
+    },
+    "manifest": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T15:09:06.494314+00:00"
+    },
+    "benchmark": {
+      "status": "completed",
+      "updated_at_utc": "2026-10-14T08:04:22.691712+00:00"
+    }
+  }
+}

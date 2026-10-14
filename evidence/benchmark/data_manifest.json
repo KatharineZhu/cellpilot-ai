@@ -1,0 +1,93 @@
+{
+  "datasets": [
+    {
+      "archive_sha256": "fdc8a77c9bfc0e78c378850df5caa77cf54352c3e6f82eea8acc35032089a622",
+      "archive_size_bytes": 18002076,
+      "dataset_id": "b_cells",
+      "download_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/b_cells/b_cells_filtered_gene_bc_matrices.tar.gz",
+      "extracted_member_sha256": {
+        "filtered_matrices_mex/hg19/barcodes.tsv": "09db2658b3055fd9c920501a5b3b9851950bd0f364a49f260b01c6b15ea8f4ca",
+        "filtered_matrices_mex/hg19/genes.tsv": "8778dd78085086be6dcafa8334f95f7cf76b25526e8ef2b63186db5127a1492c",
+        "filtered_matrices_mex/hg19/matrix.mtx": "00dd0dc0ea731de013b04fba81472248dc93f4d604e425dc5c6087658b098069"
+      },
+      "landing_page": "https://www.10xgenomics.com/datasets/cd-19-plus-b-cells-1-standard-1-1-0",
+      "license": "CC BY 4.0",
+      "reference_label": "B cell",
+      "reported_cells": 10085,
+      "reported_purity_percent": 100.0
+    },
+    {
+      "archive_sha256": "dcdc45e252a838b46c4d3672647218602f817904fc933ae12178ba9a3fa48b99",
+      "archive_size_bytes": 4222751,
+      "dataset_id": "cd14_monocytes",
+      "download_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/cd14_monocytes/cd14_monocytes_filtered_gene_bc_matrices.tar.gz",
+      "extracted_member_sha256": {
+        "filtered_matrices_mex/hg19/barcodes.tsv": "284b43ca07f82f7b74d38deddf9d0cc87e1ae81e4413c61a6bf6875cf174289f",
+        "filtered_matrices_mex/hg19/genes.tsv": "8778dd78085086be6dcafa8334f95f7cf76b25526e8ef2b63186db5127a1492c",
+        "filtered_matrices_mex/hg19/matrix.mtx": "3dc3ec963d52fad1e1f600ffed38178849c64d366b86b9824b16319df628bfca"
+      },
+      "landing_page": "https://www.10xgenomics.com/datasets/cd-14-plus-monocytes-1-standard-1-1-0",
+      "license": "CC BY 4.0",
+      "reference_label": "Monocyte",
+      "reported_cells": 2612,
+      "reported_purity_percent": 98.0
+    },
+    {
+      "archive_sha256": "3dd88aa2e33f5f833eef265fd32f564cdb81703c2e391703b0648f808d06ee93",
+      "archive_size_bytes": 21044780,
+      "dataset_id": "cd4_t_helper",
+      "download_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/cd4_t_helper/cd4_t_helper_filtered_gene_bc_matrices.tar.gz",
+      "extracted_member_sha256": {
+        "filtered_matrices_mex/hg19/barcodes.tsv": "ee549d8c9fd95854c0587c901a88a2bdd7883c5c8ea34fee608b8a609a4e0e19",
+        "filtered_matrices_mex/hg19/genes.tsv": "8778dd78085086be6dcafa8334f95f7cf76b25526e8ef2b63186db5127a1492c",
+        "filtered_matrices_mex/hg19/matrix.mtx": "e0d46877334d1e992f4f12df475327b4af10af8428f6213c2ae4087b890598aa"
+      },
+      "landing_page": "https://www.10xgenomics.com/datasets/cd-4-plus-helper-t-cells-1-standard-1-1-0",
+      "license": "CC BY 4.0",
+      "reference_label": "CD4+ T cell",
+      "reported_cells": 11213,
+      "reported_purity_percent": 99.0
+    },
+    {
+      "archive_sha256": "e6557491c09c1abdd4bf0efd0afa6139c14e39c11402d022b1601b4a07132d02",
+      "archive_size_bytes": 20028549,
+      "dataset_id": "cd8_cytotoxic_t",
+      "download_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/cytotoxic_t/cytotoxic_t_filtered_gene_bc_matrices.tar.gz",
+      "extracted_member_sha256": {
+        "filtered_matrices_mex/hg19/barcodes.tsv": "c7c1728f6ece47d5d959ef13dfb1d4e9d545603fb986688571bf0b6c11539d11",
+        "filtered_matrices_mex/hg19/genes.tsv": "8778dd78085086be6dcafa8334f95f7cf76b25526e8ef2b63186db5127a1492c",
+        "filtered_matrices_mex/hg19/matrix.mtx": "1821705d9da43344b29a3765f16380ef22306691117655367442d7fb37f28203"
+      },
+      "landing_page": "https://www.10xgenomics.com/datasets/cd-8-plus-cytotoxic-t-cells-1-standard-1-1-0",
+      "license": "CC BY 4.0",
+      "reference_label": "CD8+ T cell",
+      "reported_cells": 10209,
+      "reported_purity_percent": 98.0
+    },
+    {
+      "archive_sha256": "17765693a1a67ce4e3b069c415d348702029a13a9dbc19885433397140cb5e00",
+      "archive_size_bytes": 20049592,
+      "dataset_id": "cd56_nk",
+      "download_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/cd56_nk/cd56_nk_filtered_gene_bc_matrices.tar.gz",
+      "extracted_member_sha256": {
+        "filtered_matrices_mex/hg19/barcodes.tsv": "3d5caa5401f8a8d0b5fa49354850d7907bb822ed13c9d1bc09b4adf8dc6f0191",
+        "filtered_matrices_mex/hg19/genes.tsv": "8778dd78085086be6dcafa8334f95f7cf76b25526e8ef2b63186db5127a1492c",
+        "filtered_matrices_mex/hg19/matrix.mtx": "145f9ba433461bbf28f10f0dfaab5f671696bcdc81a80b3e227bdcc63534fb47"
+      },
+      "landing_page": "https://www.10xgenomics.com/datasets/cd-56-plus-natural-killer-cells-1-standard-1-1-0",
+      "license": "CC BY 4.0",
+      "reference_label": "NK cell",
+      "reported_cells": 8385,
+      "reported_purity_percent": 92.0
+    }
+  ],
+  "limitations": [
+    "FACS enrichment labels are experimental population labels, not perfect single-cell ground truth; reported purity ranges from 92% to 100%.",
+    "Each broad class is a separate 10x library (and may be a separate donor), so biological class is confounded with library/donor and technical effects.",
+    "Inputs are Cell Ranger filtered gene-barcode matrices after cell calling, not FASTQ files or unfiltered droplets.",
+    "The benchmark covers only five broad blood lineages and does not establish fine-subtype performance or out-of-reference rejection performance.",
+    "The frozen CellTypist model cites Stephenson et al. 2021 rather than these 10x panels; this reduces known study-level leakage but does not prove the absence of every indirect training-data relationship.",
+    "Cell-level metrics do not estimate donor-to-donor generalization because there are no independent biological replicates within each class panel."
+  ],
+  "reference_label_design": "Each class is the official FACS-enriched population named by the corresponding 10x dataset; labels were held outside annotator AnnData."
+}

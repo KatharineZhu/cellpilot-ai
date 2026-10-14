@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "events": [
+    {
+      "recorded_at_utc": "2026-10-14T08:04:03.738799+00:00",
+      "operation": "all",
+      "status": "completed",
+      "command": [
+        ".venv/bin/cellpilot",
+        "all",
+        "--config",
+        "configs/pbmc3k.yaml",
+        "--run-dir",
+        "results/pbmc3k/verified_run"
+      ],
+      "config_path": "configs/pbmc3k.yaml",
+      "config_sha256": "17697e1a88fc8ca10af8879de4b181e2b97f189bf1d615cda3c4c5dc484ffed5"
+    },
+    {
+      "recorded_at_utc": "2026-10-14T08:04:22.692293+00:00",
+      "operation": "benchmark",
+      "status": "completed",
+      "command": [
+        ".venv/bin/cellpilot",
+        "benchmark",
+        "--config",
+        "configs/benchmark.yaml",
+        "--run-dir",
+        "results/pbmc3k/verified_run"
+      ],
+      "config_path": "configs/benchmark.yaml",
+      "config_sha256": "0aee7b3f23c1131779aa2ef6bffcac0e77a0d03a0285816e027103f08b7b876e"
+    },
+    {
+      "recorded_at_utc": "2026-10-14T15:09:05.515959+00:00",
+      "operation": "interpret",
+      "status": "completed",
+      "command": [
+        ".venv/bin/cellpilot",
+        "interpret",
+        "--config",
+        "configs/pbmc3k.yaml",
+        "--run-dir",
+        "results/pbmc3k/verified_run"
+      ],
+      "config_path": "configs/pbmc3k.yaml",
+      "config_sha256": "17697e1a88fc8ca10af8879de4b181e2b97f189bf1d615cda3c4c5dc484ffed5"
+    }
+  ]
+}

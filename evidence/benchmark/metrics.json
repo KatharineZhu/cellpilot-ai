@@ -1,0 +1,13 @@
+{
+  "coverage": 0.9656,
+  "metric_policy": "strict: predictions absent from or explicitly excluded by the frozen mapping count as errors; metrics are never conditioned on covered cells",
+  "n_cells": 2500,
+  "n_mapped": 2414,
+  "n_unmapped": 86,
+  "runtime_seconds": 1.057776624977123,
+  "schema_version": "1.0",
+  "strict_accuracy": 0.9328,
+  "strict_balanced_accuracy": 0.9328,
+  "strict_macro_f1": 0.9478144875461012,
+  "strict_mcc": 0.918448081116924
+}

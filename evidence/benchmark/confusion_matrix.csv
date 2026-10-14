@@ -1,0 +1,6 @@
+reference_class,B cell,Monocyte,CD4+ T cell,CD8+ T cell,NK cell,__unmapped__
+B cell,500,0,0,0,0,0
+Monocyte,3,469,2,1,1,24
+CD4+ T cell,3,2,473,8,0,14
+CD8+ T cell,4,2,55,393,0,46
+NK cell,0,0,1,0,497,2

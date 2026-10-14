@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "backend": "deterministic",
+    "validated": true,
+    "external_api_called": false
+  },
+  "interpretations": [
+    {
+      "cluster": "0",
+      "proposed_label": "unresolved",
+      "confidence": "low",
+      "evidence_ids": [
+        "cluster:0:marker:LDHB",
+        "cluster:0:marker:RPS12",
+        "cluster:0:marker:RPS25"
+      ],
+      "uncertainties": [
+        "Available evidence did not support a unique broad cell-type label."
+      ]
+    },
+    {
+      "cluster": "1",
+      "proposed_label": "B_naive",
+      "confidence": "moderate",
+      "evidence_ids": [
+        "cluster:1:celltypist"
+      ],
+      "uncertainties": [
+        "CellTypist agreement is a model prediction, not experimental ground truth."
+      ]
+    },
+    {
+      "cluster": "2",
+      "proposed_label": "CD14_mono",
+      "confidence": "moderate",
+      "evidence_ids": [
+        "cluster:2:celltypist"
+      ],
+      "uncertainties": [
+        "CellTypist agreement is a model prediction, not experimental ground truth."
+      ]
+    },
+    {
+      "cluster": "3",
+      "proposed_label": "Platelets",
+      "confidence": "moderate",
+      "evidence_ids": [
+        "cluster:3:celltypist"
+      ],
+      "uncertainties": [
+        "CellTypist agreement is a model prediction, not experimental ground truth."
+      ]
+    },
+    {
+      "cluster": "4",
+      "proposed_label": "NK cell",
+      "confidence": "low",
+      "evidence_ids": [
+        "cluster:4:marker:NKG7",
+        "cluster:4:marker:GNLY",
+        "cluster:4:marker:PRF1",
+        "cluster:4:marker:GZMB"
+      ],
+      "uncertainties": [
+        "The label is a heuristic marker-panel match and requires orthogonal validation."
+      ]
+    },
+    {
+      "cluster": "5",
+      "proposed_label": "Dendritic cell",
+      "confidence": "low",
+      "evidence_ids": [
+        "cluster:5:marker:FCER1A",
+        "cluster:5:marker:CST3",
+        "cluster:5:marker:HLA-DRA"
+      ],
+      "uncertainties": [
+        "The label is a heuristic marker-panel match and requires orthogonal validation."
+      ]
+    }
+  ]
+}

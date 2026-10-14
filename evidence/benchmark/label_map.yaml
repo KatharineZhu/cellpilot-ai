@@ -1,0 +1,80 @@
+schema_version: "1.0"
+
+model:
+  name: Healthy_COVID19_PBMC.pkl
+  version: v1
+  url: https://celltypist.cog.sanger.ac.uk/models/COVID19_PBMC_Haniffa/v1/Healthy_COVID19_PBMC.pkl
+  sha256: 1eee68d23b4ac0f6999a0a92d6c950d671f31fcdb003ce0760c580b0bd6a3b79
+  source: https://doi.org/10.1038/s41591-021-01329-2
+
+target_classes:
+  - B cell
+  - Monocyte
+  - CD4+ T cell
+  - CD8+ T cell
+  - NK cell
+
+policy:
+  granularity: Five experimentally enriched broad PBMC lineages.
+  freeze_rule: Mapping was fixed before benchmark scoring; do not tune it against outcomes.
+  unmapped_rule: Out-of-scope or lineage-ambiguous predictions are strict errors, never coerced to the nearest class.
+  majority_voting: Disabled for the primary benchmark.
+
+mappings:
+  B_exhausted: B cell
+  B_immature: B cell
+  B_malignant: B cell
+  B_naive: B cell
+  B_non-switched_memory: B cell
+  B_switched_memory: B cell
+  Plasma_cell_IgA: B cell
+  Plasma_cell_IgG: B cell
+  Plasma_cell_IgM: B cell
+  Plasmablast: B cell
+
+  C1_CD16_mono: Monocyte
+  CD14_mono: Monocyte
+  CD16_mono: Monocyte
+  CD83_CD14_mono: Monocyte
+  Mono_prolif: Monocyte
+
+  CD4.CM: CD4+ T cell
+  CD4.EM: CD4+ T cell
+  CD4.IL22: CD4+ T cell
+  CD4.Naive: CD4+ T cell
+  CD4.Prolif: CD4+ T cell
+  CD4.Tfh: CD4+ T cell
+  CD4.Th1: CD4+ T cell
+  CD4.Th17: CD4+ T cell
+  CD4.Th2: CD4+ T cell
+  Treg: CD4+ T cell
+
+  CD8.EM: CD8+ T cell
+  CD8.Naive: CD8+ T cell
+  CD8.Prolif: CD8+ T cell
+  CD8.TE: CD8+ T cell
+
+  NK_16hi: NK cell
+  NK_56hi: NK cell
+  NK_prolif: NK cell
+
+explicitly_unmapped:
+  ASDC: Dendritic lineage is outside the five target populations.
+  DC1: Dendritic lineage is outside the five target populations.
+  DC2: Dendritic lineage is outside the five target populations.
+  DC3: Dendritic lineage is outside the five target populations.
+  DC_prolif: Cycling dendritic lineage is outside the five target populations.
+  HSC_CD38neg: Hematopoietic progenitors are outside the five target populations.
+  HSC_CD38pos: Hematopoietic progenitors are outside the five target populations.
+  HSC_MK: Megakaryocytic progenitors are outside the five target populations.
+  HSC_erythroid: Erythroid progenitors are outside the five target populations.
+  HSC_myeloid: Myeloid progenitors are not equivalent to mature CD14+ monocytes.
+  HSC_prolif: Cycling hematopoietic progenitors are outside the five target populations.
+  ILC1_3: Innate lymphoid cells are not forced into the NK target class.
+  ILC2: Innate lymphoid cells are not forced into the NK target class.
+  MAIT: MAIT lineage is not forced into CD4 or CD8 target classes.
+  NKT: NKT lineage is not forced into the NK target class.
+  Platelets: Platelets are outside the five target populations.
+  RBC: Erythroid cells are outside the five target populations.
+  gdT: Gamma-delta T cells are not forced into CD4 or CD8 target classes.
+  pDC: Plasmacytoid dendritic cells are outside the five target populations.

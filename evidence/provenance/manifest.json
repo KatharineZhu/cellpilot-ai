@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0",
+  "run_id": "verified_run",
+  "created_at_utc": "2026-10-14T15:09:06.599433Z",
+  "status": "completed",
+  "command": [
+    ".venv/bin/cellpilot",
+    "interpret",
+    "--config",
+    "configs/pbmc3k.yaml",
+    "--run-dir",
+    "results/pbmc3k/verified_run"
+  ],
+  "random_seed": 42,
+  "config_sha256": "17697e1a88fc8ca10af8879de4b181e2b97f189bf1d615cda3c4c5dc484ffed5",
+  "git": {
+    "available": true,
+    "commit": "2c7ba636d50218fdf378b94eb6ac87ce48e6b367",
+    "branch": "main",
+    "dirty": false,
+    "error": null
+  },
+  "runtime": {
+    "python_version": "3.12.5",
+    "python_executable": "<PROJECT_ROOT>/.venv/bin/python",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "implementation": "CPython",
+    "packages": {
+      "anndata": "0.13.4",
+      "celltypist": "1.7.1",
+      "certifi": "2026.7.22",
+      "h5py": "3.16.0",
+      "igraph": "1.0.0",
+      "leidenalg": "0.12.0",
+      "matplotlib": "3.11.2",
+      "numba": "0.68.0",
+      "numpy": "2.5.4",
+      "openai": "2.54.0",
+      "pandas": "3.0.6",
+      "pydantic": "2.14.1",
+      "scanpy": "1.12.4",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.18.1",
+      "streamlit": "1.65.0",
+      "umap-learn": "0.5.12"
+    }
+  },
+  "inputs": [
+    {
+      "path": "<PROJECT_ROOT>/configs/benchmark.yaml",
+      "sha256": "0aee7b3f23c1131779aa2ef6bffcac0e77a0d03a0285816e027103f08b7b876e",
+      "size_bytes": 1964
+    },
+    {
+      "path": "<PROJECT_ROOT>/configs/pbmc3k.yaml",
+      "sha256": "17697e1a88fc8ca10af8879de4b181e2b97f189bf1d615cda3c4c5dc484ffed5",
+      "size_bytes": 1951
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/benchmark/facs_5class/archives/b_cells.tar.gz",
+      "sha256": "fdc8a77c9bfc0e78c378850df5caa77cf54352c3e6f82eea8acc35032089a622",
+      "size_bytes": 18002076
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/benchmark/facs_5class/archives/cd14_monocytes.tar.gz",
+      "sha256": "dcdc45e252a838b46c4d3672647218602f817904fc933ae12178ba9a3fa48b99",
+      "size_bytes": 4222751
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/benchmark/facs_5class/archives/cd4_t_helper.tar.gz",
+      "sha256": "3dd88aa2e33f5f833eef265fd32f564cdb81703c2e391703b0648f808d06ee93",
+      "size_bytes": 21044780
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/benchmark/facs_5class/archives/cd56_nk.tar.gz",
+      "sha256": "17765693a1a67ce4e3b069c415d348702029a13a9dbc19885433397140cb5e00",
+      "size_bytes": 20049592
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/benchmark/facs_5class/archives/cd8_cytotoxic_t.tar.gz",
+      "sha256": "e6557491c09c1abdd4bf0efd0afa6139c14e39c11402d022b1601b4a07132d02",
+      "size_bytes": 20028549
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/celltypist/Healthy_COVID19_PBMC.pkl",
+      "sha256": "1eee68d23b4ac0f6999a0a92d6c950d671f31fcdb003ce0760c580b0bd6a3b79",
+      "size_bytes": 816569
+    },
+    {
+      "path": "<PROJECT_ROOT>/data/raw/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz",
+      "sha256": "847d6ebd9a1ec9a768f2be7e40ca42cbfe75ebeb6d76a4c24167041699dc28b5",
+      "size_bytes": 7621991
+    }
+  ],
+  "outputs": [
+    {
+      "path": "analysis_summary.json",
+      "sha256": "7b55969ae67f6b8212970c82087ebf2e291211eee525823b02658fea5b9ce73d",
+      "size_bytes": 861
+    },
+    {
+      "path": "annotation/celltypist_metadata.json",
+      "sha256": "8fa27332066c208b8d411625c208e6eab5b4e97e7b5d9bc9259164517f357f07",
+      "size_bytes": 2700
+    },
+    {
+      "path": "benchmark/BENCHMARK_REPORT.md",
+      "sha256": "52fd8de043561126e43dd770024cdc36c77522733a79ee1b91a36996790ee7cf",
+      "size_bytes": 1667
+    },
+    {
+      "path": "benchmark/benchmark_config.resolved.yaml",
+      "sha256": "8c22de7b37900fb1bf52ac98dcf738fbf4bb53b759c4e4b0f1cecaa83703e29a",
+      "size_bytes": 1675
+    },
+    {
+      "path": "benchmark/benchmark_metadata.json",
+      "sha256": "bdd959297fec5ddc3a226c827665a7ce405755a26aff8d4a55af2e7a0e66c78b",
+      "size_bytes": 5978
+    },
+    {
+      "path": "benchmark/cell_predictions.csv.gz",
+      "sha256": "079f1b401e24289936e3cecff067e62596c40b5afc0e608feedb16d325ab1084",
+      "size_bytes": 34501
+    },
+    {
+      "path": "benchmark/confusion_matrix.csv",
+      "sha256": "0fd0bac658f237a856c8d4353e2927325a40b066732590c7bcb7d5abdaaa62e4",
+      "size_bytes": 199
+    },
+    {
+      "path": "benchmark/confusion_matrix.png",
+      "sha256": "488e5e44d82137b8c0370284e5cdd914134fd3f97a05f535aee4d89166caeb9d",
+      "size_bytes": 66420
+    },
+    {
+      "path": "benchmark/confusion_matrix_normalized.csv",
+      "sha256": "acbf63afbfb8097c971c27e519d7345300c36b3392c336d15ee3a539a6a86e56",
+      "size_bytes": 282
+    },
+    {
+      "path": "benchmark/data_manifest.json",
+      "sha256": "c0e17fb911eaf435ce29fd871ad6b7f7c9b580646dfeecb9e2e88c3accaa72b9",
+      "size_bytes": 5866
+    },
+    {
+      "path": "benchmark/label_map.yaml",
+      "sha256": "92f39bce91ee61d679bd4976a89558963a3e16be7216fcb85505f99c2cc227f4",
+      "size_bytes": 2895
+    },
+    {
+      "path": "benchmark/metrics.json",
+      "sha256": "51dfc048ff86e35bfe75f05d5f881e34447ba3fbdcdbad5bc2d8d590fb0966ed",
+      "size_bytes": 457
+    },
+    {
+      "path": "benchmark/per_class_metrics.csv",
+      "sha256": "c5b2cdbc571e26dec463d210689f4b166a295a0fcf8b0c6d4e03b84213064f7f",
+      "size_bytes": 330
+    },
+    {
+      "path": "benchmark/sample_manifest.csv.gz",
+      "sha256": "fe833f66d9521866ec756a2b599b01ef31743182fff93b94707e5aa19fda234e",
+      "size_bytes": 21700
+    },
+    {
+      "path": "config.resolved.yaml",
+      "sha256": "a13293f4fa98ca2692943baec86cd96532d810078655853e57b0194b53d094d3",
+      "size_bytes": 1598
+    },
+    {
+      "path": "data/pbmc3k_processed.h5ad",
+      "sha256": "76e4a48c38c91a02f9bfb307133d666f0e641fedfc00cf8cc5ab8d2d15866f0e",
+      "size_bytes": 29977132
+    },
+    {
+      "path": "execution_history.json",
+      "sha256": "ab9ca33ecde9d864128402e91d28bc16de8162fab25cae89b4182da7e1641d5d",
+      "size_bytes": 1419
+    },
+    {
+      "path": "interpretation/evidence_packet.json",
+      "sha256": "4723e9d6126c84c629397bf966ef8bf13a32811376e06b9855bff7e415c4f568",
+      "size_bytes": 50085
+    },
+    {
+      "path": "interpretation/interpretation.json",
+      "sha256": "8318ef2dfa7160892f5d73c14392f18db7a4a4b91716b467bb639cea1349d139",
+      "size_bytes": 2085
+    },
+    {
+      "path": "interpretation/interpretation.md",
+      "sha256": "a60711630657e132d64e4797670883347d4ff309469bd31efdc600aa94123f88",
+      "size_bytes": 1715
+    },
+    {
+      "path": "logs/annotation_download_resolution.json",
+      "sha256": "54cc5d94f56c7c33d06d95b558db68fcd5e07c8b2bc7c6a8338c316a2f5e7233",
+      "size_bytes": 603
+    },
+    {
+      "path": "logs/annotation_failure.log",
+      "sha256": "8f7bfe2a7b4753fd690128934be44a6b40bf9accc96b88f401188cc184054782",
+      "size_bytes": 4969
+    },
+    {
+      "path": "plots/highly_variable_genes.png",
+      "sha256": "c80937d74823496630be2b683f494de8bac202633cc1d61826b8e2ce5c386c93",
+      "size_bytes": 116691
+    },
+    {
+      "path": "plots/marker_dotplot.png",
+      "sha256": "33e3d978b3652c9194f6afe958ca1367cb358a942fffab93089d214c11b601c6",
+      "size_bytes": 88064
+    },
+    {
+      "path": "plots/pca_variance_ratio.png",
+      "sha256": "d07d4bbfacc88e12d48e7fff6c3b38ba92b2060def4a79719cce2fd59496e0cb",
+      "size_bytes": 49992
+    },
+    {
+      "path": "plots/qc_violin_before_filtering.png",
+      "sha256": "e8d7ed70c1c204893ef2fe7523a755ce77225b93419cc5b2fbdd032d111c5186",
+      "size_bytes": 160388
+    },
+    {
+      "path": "plots/umap_celltypist.png",
+      "sha256": "74041e5a67875d4ad4bd665d59e93dac5d054aa6bda3a016224a4753ac7ae614",
+      "size_bytes": 174873
+    },
+    {
+      "path": "plots/umap_clusters.png",
+      "sha256": "7aafa76267d7055687cb23aa2f6084c290d15ac98d27624ab038744b9528634d",
+      "size_bytes": 55343
+    },
+    {
+      "path": "provenance/pbmc3k_source_manifest.json",
+      "sha256": "8424c4ad62e9cf69c475784dc3bc5ef7b301cbe1c398145c5d0ae2259f1a0e01",
+      "size_bytes": 1069
+    },
+    {
+      "path": "stage_status.json",
+      "sha256": "af949203c57e0245bffd28c8217843673af18c638ce9552d20aa45d677ff61bc",
+      "size_bytes": 789
+    },
+    {
+      "path": "tables/celltypist_cells.csv",
+      "sha256": "43f44d6858dfa3b63909e717d7b8c1183545560f9557b0a280253e137af151b5",
+      "size_bytes": 119174
+    },
+    {
+      "path": "tables/celltypist_cluster_consensus.csv",
+      "sha256": "2113d716e42e799bebc7513c0620e96a1c17935d9b2d68a7ff4e62b1c53cacdc",
+      "size_bytes": 342
+    },
+    {
+      "path": "tables/celltypist_probabilities.csv.gz",
+      "sha256": "4f5113bf70bd19563302449c2987cbab3a30b0b72862cbb48f4e5dd7fdfdaec4",
+      "size_bytes": 1306464
+    },
+    {
+      "path": "tables/cluster_counts.csv",
+      "sha256": "cdb4530d2a8be16a8c12263b7450edce91d952a21eaec5ef1b5c15086664c6fd",
+      "size_bytes": 182
+    },
+    {
+      "path": "tables/markers.csv",
+      "sha256": "28c8aa6fa02e8899e23c5367087cef8c52f84902a4ad008029240898a094b9e3",
+      "size_bytes": 65761
+    },
+    {
+      "path": "tables/qc_cells_before.csv",
+      "sha256": "2c016750140f191c95467479aca18a45172e66ec7ce4734de1d3d7b9df5d3a83",
+      "size_bytes": 183642
+    },
+    {
+      "path": "tables/umap_coordinates.csv",
+      "sha256": "fc924a7a6e8e5b9c9f60663b1b73d995d37f696f7ef76163eba2f66981bea535",
+      "size_bytes": 102793
+    }
+  ],
+  "warnings": [
+    "PBMC 3k is a Cell Ranger filtered matrix, not raw droplets or FASTQ.",
+    "The dataset represents one donor; marker tests are descriptive cell-level analyses, not donor-level inference.",
+    "This workflow does not model ambient RNA, doublets, batches, or condition effects.",
+    "FACS enrichment labels are experimental population labels, not perfect single-cell ground truth; reported purity ranges from 92% to 100%.",
+    "Each broad class is a separate 10x library (and may be a separate donor), so biological class is confounded with library/donor and technical effects.",
+    "Inputs are Cell Ranger filtered gene-barcode matrices after cell calling, not FASTQ files or unfiltered droplets.",
+    "The benchmark covers only five broad blood lineages and does not establish fine-subtype performance or out-of-reference rejection performance.",
+    "The frozen CellTypist model cites Stephenson et al. 2021 rather than these 10x panels; this reduces known study-level leakage but does not prove the absence of every indirect training-data relationship.",
+    "Cell-level metrics do not estimate donor-to-donor generalization because there are no independent biological replicates within each class panel."
+  ]
+}

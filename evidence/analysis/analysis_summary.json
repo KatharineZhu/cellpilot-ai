@@ -1,0 +1,25 @@
+{
+  "raw_validation": {
+    "n_cells": 2700,
+    "n_genes": 32738,
+    "nonzero_values": 2286884,
+    "max_count": 419.0
+  },
+  "cells_before_qc": 2700,
+  "genes_before_qc": 32738,
+  "cells_after_qc": 2638,
+  "genes_after_qc": 13656,
+  "cells_removed": 62,
+  "genes_removed": 19082,
+  "n_highly_variable_genes": 2000,
+  "n_pcs": 40,
+  "n_clusters": 6,
+  "random_seed": 42,
+  "normalization": "normalize_total(target_sum=10000.0) then log1p exactly once",
+  "marker_test": "Wilcoxon rank-sum on full-gene log-normalized adata.raw; BH-adjusted p-values",
+  "limitations": [
+    "PBMC 3k is a Cell Ranger filtered matrix, not raw droplets or FASTQ.",
+    "The dataset represents one donor; marker tests are descriptive cell-level analyses, not donor-level inference.",
+    "This workflow does not model ambient RNA, doublets, batches, or condition effects."
+  ]
+}
