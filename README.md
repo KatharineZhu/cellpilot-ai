@@ -154,7 +154,7 @@ No raw data, processed matrices, or model files are committed. All are downloade
 **Requirements:** Python 3.12 (verified with CPython 3.12.5). No API key is needed.
 
 ```bash
-git clone https://github.com/<your-username>/cellpilot-ai.git
+git clone https://github.com/KatharineZhu/cellpilot-ai.git
 cd cellpilot-ai
 
 python3.12 -m venv .venv
