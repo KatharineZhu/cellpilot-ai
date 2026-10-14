@@ -1,0 +1,30 @@
+version: 1
+scope: "Heuristic broad immune-cell marker panels for PBMC cluster interpretation; not ground truth."
+source:
+  title: "Scanpy PBMC 3k clustering tutorial"
+  url: "https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering.html"
+panels:
+  CD4 T cell:
+    markers: [IL7R, CCR7, LTB, MAL, NOSIP]
+    exclusions: [NKG7, GNLY]
+  Cytotoxic T cell:
+    markers: [CD3D, CD3E, CD8A, CCL5, NKG7]
+    exclusions: [MS4A1, CD14]
+  NK cell:
+    markers: [NKG7, GNLY, PRF1, GZMB, KLRD1]
+    exclusions: [CD3D, MS4A1]
+  B cell:
+    markers: [MS4A1, CD79A, CD37, CD74, CD79B]
+    exclusions: [NKG7, LST1]
+  Classical monocyte:
+    markers: [LYZ, S100A8, S100A9, CTSS, LST1, CD14]
+    exclusions: [MS4A1, CD3D]
+  Non-classical monocyte:
+    markers: [FCGR3A, LST1, IFITM3, LILRB1, CFD]
+    exclusions: [MS4A1, CD3D]
+  Dendritic cell:
+    markers: [FCER1A, CST3, CD1C, HLA-DRA]
+    exclusions: [NKG7, MS4A1]
+  Platelet:
+    markers: [PPBP, PF4, NRGN, GNG11]
+    exclusions: [CD3D, LST1]

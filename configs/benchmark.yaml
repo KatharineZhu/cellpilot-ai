@@ -1,0 +1,71 @@
+# Five-class orthogonal benchmark using official 10x FACS-enriched PBMC panels.
+# The labels are experimentally enriched population labels with 92-100% reported
+# purity, not perfect cell-level ground truth. Each class is a separate library,
+# so metrics are descriptive and do not estimate donor-level generalization.
+project_name: cellpilot-ai-facs-benchmark
+output_dir: results/pbmc3k/verified_run
+
+dataset:
+  name: pbmc3k
+  source: url
+  loader: null
+  url: https://cf.10xgenomics.com/samples/cell-exp/1.1.0/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz
+  path: null
+  sha256: 847d6ebd9a1ec9a768f2be7e40ca42cbfe75ebeb6d76a4c24167041699dc28b5
+  format: 10x_mtx
+
+qc:
+  min_genes: 200
+  max_genes: 2500
+  min_counts: null
+  max_counts: null
+  max_pct_mt: 5.0
+  min_cells_per_gene: 3
+  mito_prefix:
+    - MT-
+
+analysis:
+  target_sum: 10000
+  n_top_genes: 2000
+  hvg_flavor: seurat
+  n_pcs: 40
+  n_neighbors: 10
+  umap_min_dist: 0.5
+  leiden_resolution: 0.5
+  marker_method: wilcoxon
+  marker_n_genes: 100
+  random_seed: 42
+
+annotation:
+  enabled: true
+  method: celltypist
+  model: Healthy_COVID19_PBMC.pkl
+  model_dir: data/celltypist
+  model_url: https://celltypist.cog.sanger.ac.uk/models/COVID19_PBMC_Haniffa/v1/Healthy_COVID19_PBMC.pkl
+  model_sha256: 1eee68d23b4ac0f6999a0a92d6c950d671f31fcdb003ce0760c580b0bd6a3b79
+  majority_voting: false
+  strict: true
+  min_confidence: 0.0
+
+interpretation:
+  enabled: false
+  backend: deterministic
+  model: gpt-5-mini
+  api_key_env: OPENAI_API_KEY
+  evidence_registry: src/cellpilot/resources/marker_evidence.yaml
+  max_markers_per_cluster: 20
+  require_citations: true
+  reject_unsupported: true
+
+benchmark:
+  enabled: true
+  protocol: facs_5class
+  dataset: null
+  label_column: null
+  label_map_path: src/cellpilot/resources/benchmark_label_map.yaml
+  data_dir: data/benchmark/facs_5class
+  max_cells_per_class: 500
+  bootstrap_iterations: 0
+  confidence_level: 0.95
+  random_seed: 42
+  fail_on_same_checksum: true

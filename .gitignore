@@ -1,0 +1,48 @@
+# Python bytecode and build products
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Test, type-checker, and coverage caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Notebook and editor state
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Runtime caches, logs, and temporary files
+work/
+*.log
+
+# Downloaded public data, processed matrices, models, and generated results
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/celltypist/*
+!data/celltypist/.gitkeep
+data/cache/
+data/benchmark/
+results/*
+!results/.gitkeep
+outputs/*
+!outputs/.gitkeep
